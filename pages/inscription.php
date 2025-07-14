@@ -1,6 +1,5 @@
 <?php
 require('../inc/functions.php');
-$resultat = mysqli_query(dbconnect(), 'SELECT * FROM membre');
 ?>
 <!DOCTYPE html>
 <html lang="en">
