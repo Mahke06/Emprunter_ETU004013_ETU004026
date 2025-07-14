@@ -11,11 +11,12 @@ $resultat = mysqli_query(dbconnect(), 'SELECT * FROM membre');
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>LOGIN</title>
 </head>
-<body>
+<body class="bg-light">
 
-<main class = "text-center">
-    <h1 class="mb-4">Login</h1>
+<main class ="text-center">
+    <section class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
     <form action="traitementlog.php" method="get" class="w-50">
+        <h1 class="mb-3">Login</h1>
         <div class="mb-3">
             <label class="form-label">Adresse Email :</label>
             <input type="email" name="email" required>
@@ -25,12 +26,13 @@ $resultat = mysqli_query(dbconnect(), 'SELECT * FROM membre');
             <input type="password" name="mdp" required>
         </div>
         <div class="d-grid gap-2">
-            <input type="submit" value="Valider" class="btn btn-primary">
+            <input type="submit" value="Valider" class="btn btn-success">
         </div>
         <div class="text-center mt-3">
             <a href="inscription.php">S'incrire</a>
         </div>
     </form>
+    </section>
 </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

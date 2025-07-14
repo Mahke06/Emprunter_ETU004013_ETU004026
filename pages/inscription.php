@@ -11,47 +11,49 @@ $resultat = mysqli_query(dbconnect(), 'SELECT * FROM membre');
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>INSCRIPTION</title>
 </head>
-<body>
+<body class="bg-light">
 
 
-<main class = "text-center">
-    <h1 class="mb-4">Formulaire d'inscription</h1>
-    <form action="traitinscription.php" method="POST" class="w-50">
-        <div class="mb-3">
-            <label >Adresse Email :</label>
-            <input type="email" name="email" required />
+<main class="text-center w-50">
+    <section class="d-flex justify-content-center align-items-center min-vh-100 bg-light">
+    <form action="traitinscription.php" method="POST">
+        <h1 class="mb-3">Formulaire d'inscription</h1>
+        <div class="mb-3 text-start">
+            <label class="form-label">Adresse Email :</label>
+            <input type="email" name="email" class="form-control" required />
         </div>
-        <div class="mb-3">
-            <label >Nom :</label>
-            <input type="text" name="nom"  required />
+        <div class="mb-3 text-start">
+            <label class="form-label">Nom :</label>
+            <input type="text" name="nom" class="form-control" required />
         </div>
-        <div class="mb-3">
+        <div class="mb-3 text-start">
             <label class="form-label">Date de naissance :</label>
-            <input type="date" name="date_de_naissance"  required />
+            <input type="date" name="date_de_naissance" class="form-control" required />
         </div>
-        <div class="mb-3">
-            <label>Genre :</label>
-            <select name="genre" required>
+        <div class="mb-3 text-start">
+            <label class="form-label">Genre :</label>
+            <select name="genre" class="form-select" required>
                 <option value="">Choisir</option>
                 <option value="M">Masculin</option>
                 <option value="F">Feminin</option>
             </select>
         </div>
-        <div class="mb-3">
-            <label >Ville :</label>
-            <input type="text" name="ville" required />
+        <div class="mb-3 text-start">
+            <label class="form-label">Ville :</label>
+            <input type="text" name="ville" class="form-control" required />
         </div>
-        <div class="mb-3">
-            <label >Mot de Passe :</label>
-            <input type="password" name="mdp"required />
+        <div class="mb-3 text-start">
+            <label class="form-label">Mot de Passe :</label>
+            <input type="password" name="mdp" class="form-control" required />
         </div>
         <div class="d-grid gap-2">
             <input type="submit" value="S'inscrire" class="btn btn-success" />
         </div>
-        <div class="text-center mt-3">
-            <a href="index.php">Deja membre ??</a>
+        <div class="mt-3">
+            <a href="index.php">Deja membre ?</a>
         </div>
     </form>
+    </section>
 </main>
 
 

@@ -68,7 +68,7 @@ INSERT INTO Emprunter_objet (nom_objet, id_categorie, id_membre) VALUES
 ('Perceuse', 2, 1);
 
 INSERT INTO Emprunter_objet (nom_objet, id_categorie, id_membre) VALUES
-('Crème hydratante', 1, 2),
+('Creme hydratante', 1, 2),
 ('Scie sauteuse', 2, 2),
 ('Compresseur', 3, 2),
 ('Moule a gâteau', 4, 2),
