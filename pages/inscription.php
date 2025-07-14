@@ -16,7 +16,7 @@ $resultat = mysqli_query(dbconnect(), 'SELECT * FROM membre');
 
 <main class = "text-center">
     <h1 class="mb-4">Formulaire d'inscription</h1>
-    <form action="traitementinscription.php" method="POST" class="w-50">
+    <form action="traitinscription.php" method="POST" class="w-50">
         <div class="mb-3">
             <label >Adresse Email :</label>
             <input type="email" name="email" required />

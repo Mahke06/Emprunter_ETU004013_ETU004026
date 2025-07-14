@@ -44,10 +44,10 @@ Create table Emprunter_emprunt (
 
 
 INSERT INTO Emprunter_membre (nom, date_de_naissance, genre, email, ville, mdp, image_profil) VALUES
-('Alice Dupont', '1985-06-15', 'F', 'alice@example.com', 'Paris', SHA2('mdpAlice',256), 'alice.jpg'),
-('Bob Martin', '1990-11-20', 'M', 'bob@example.com', 'Lyon', SHA2('mdpBob',256), 'bob.jpg'),
-('Claire Petit', '1978-02-03', 'F', 'claire@example.com', 'Marseille', SHA2('mdpClaire',256), 'claire.jpg'),
-('David Moreau', '1982-09-12', 'M', 'david@example.com', 'Toulouse', SHA2('mdpDavid',256), 'david.jpg');
+('Alice Dupont', '1985-06-15', 'F', 'alice@example.com', 'Paris', 'mdpAlice', 'alice.jpg'),
+('Bob Martin', '1990-11-20', 'M', 'bob@example.com', 'Lyon', 'mdpBob', 'bob.jpg'),
+('Claire Petit', '1978-02-03', 'F', 'claire@example.com', 'Marseille', 'mdpClaire', 'claire.jpg'),
+('David Moreau', '1982-09-12', 'M', 'david@example.com', 'Toulouse', 'mdpDavid', 'david.jpg');
 
 INSERT INTO Emprunter_categorie (nom_categorie) VALUES
 ('Esthetique'),

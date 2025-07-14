@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('../inc/functions.php');
+
 if (isset($_POST['email'], $_POST['mdp'])) {
     $email = $_POST['email'];
     $mdp = $_POST['mdp'];
@@ -15,7 +16,10 @@ if (isset($_POST['email'], $_POST['mdp'])) {
         header("Location: objet.php");
         exit;
     } else {
-        echo '<p>Erreur de connexion : Email ou mot de passe incorrect.</p>';
+        echo '<p>Erreur</p>';
         echo '<p><a href="index.php">Retour au login</a></p>';
     }
-} 
+} else {
+    header("Location: objet.php");
+    exit;
+}
