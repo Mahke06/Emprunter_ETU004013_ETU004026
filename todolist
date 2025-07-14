@@ -1,0 +1,56 @@
+Version 1
+
+Creer la base de donnees :
+    db_s2_ETU004013.sql
+
+Inserer les donnees de test
+
+Page creer :
+    index.php
+    Login
+    fonction Login
+
+
+Version 2
+Lorsqu'on clique sur un employé, on doit afficher la fiche de l'employé
+    fiche.php
+    fonction
+Rajouter l'historique du salaire et de l'emploi occupe dans la fiche,
+    fonction
+Créer un formulaire de recherche ( departement, nom employé, age min et max )
+    formulaire.php
+    fonction
+Afficher seulement 20 lignes (utiliser LIMIT en SQL )
+SELECT * FROM etudiants
+LIMIT 20, 10;
+-- saute les 20 premiers et affiche les 10 suivants
+Créer un lien suivant pour afficher les 20 prochaines lignes
+Créer un lien précédent pour afficher les 20 lignes précédentes
+
+
+Version 3
+Ajouter une colonne nombre employé sur la liste des départements
+    fonction
+
+Créer une page pour afficher un tableau contenant le nombre d'employé (homme et femme ), et le
+salaire moyen pour chaque emploi
+    countemployees.php
+    fonction
+    
+Dans la fiche employé, mettre l'emploi le plus long (en terme de date)
+
+Version 4
+ Dans la fiche de l'employé, mettre un bouton "changer de département". Cela va ouvrir un formulaire(choix département, date de début).
+    changedep.php
+    traitement
+    fonction
+    a. Vérifier que le nouveau département s'affiche bien après l'ajout
+    b. Mettre en haut du formulaire le département actuel avec la date de début( dans la zone de liste, ne pas mettre le département actuel )
+    c. Mettre un message de d'erreur si la date de début du nouveau département est antérieur à la date du début de l'actuel'
+Dans la fiche de l'employé, mettre un bouton "Devenir Manager". Cela va ouvrir un formulaire (Date de début).
+    lasamanager.php
+    traitement
+    fonction
+    a. Vérifier dans la liste des départements qu'il est bien le nouveau manager
+    b. Mettre en haut du formulaire le nom du manager en cours.
+    c. Mettre un message de d'erreur si la date de début du nouveau manager est antérieur à la date du début de l'actuel
