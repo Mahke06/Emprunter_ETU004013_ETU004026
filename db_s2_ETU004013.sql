@@ -4,7 +4,7 @@ Create table Emprunter_membre (
     id_membre int auto_increment primary key,
     nom VARCHAR(50),
     date_de_naissance Date,
-    gender      ENUM ('M','F')  ,
+    genre      ENUM ('M','F')  ,
     email VARCHAR(100),
     ville VARCHAR(50),
     mdp VARCHAR(100),
@@ -43,7 +43,7 @@ Create table Emprunter_emprunt (
 );
 
 
-INSERT INTO Emprunter_membre (nom, date_naissance, genre, email, ville, mdp, image_profil) VALUES
+INSERT INTO Emprunter_membre (nom, date_de_naissance, genre, email, ville, mdp, image_profil) VALUES
 ('Alice Dupont', '1985-06-15', 'F', 'alice@example.com', 'Paris', SHA2('mdpAlice',256), 'alice.jpg'),
 ('Bob Martin', '1990-11-20', 'M', 'bob@example.com', 'Lyon', SHA2('mdpBob',256), 'bob.jpg'),
 ('Claire Petit', '1978-02-03', 'F', 'claire@example.com', 'Marseille', SHA2('mdpClaire',256), 'claire.jpg'),
