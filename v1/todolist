@@ -1,0 +1,16 @@
+Version 1
+
+Creer la base de donnees :
+    db_s2_ETU004013.sql
+
+Inserer les donnees de test
+
+Page creer :
+    index.php
+    inscription.php
+    Login
+    fonction Login
+
+    objet.php
+    les traitements
+    fonction objet
