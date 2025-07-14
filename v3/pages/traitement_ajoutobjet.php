@@ -22,7 +22,6 @@ if (isset($_POST['nom_objet'], $_POST['categorie']) && isset($_SESSION['id_membr
                 }
             }
         }
-
         if (!$image_added) {
             mysqli_query(dbconnect(), "INSERT INTO objet_images (id_objet, image, principale) VALUES ($id_objet, 'default.png', 1)");
         }

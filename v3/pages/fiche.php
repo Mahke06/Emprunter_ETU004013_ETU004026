@@ -9,9 +9,10 @@ $membre_res = mysqli_query(dbconnect(), $membre_sql);
 $membre = mysqli_fetch_assoc($membre_res);
 
 $sql = "SELECT c.id_categorie, c.nom_categorie, o.id_objet, o.nom_objet FROM Emprunter_categorie c
-    JOIN Emprunter_objet o ON o.id_categorie = c.id_categorie WHERE o.id_membre = $id_membreORDER BY c.nom_categorie, o.nom_objet";
+    JOIN Emprunter_objet o ON o.id_categorie = c.id_categorie WHERE o.id_membre = $id_membre ORDER BY c.nom_categorie, o.nom_objet";
 
 $objets_par_categorie = [];
+$row = mysqli_query(dbconnect(), $sql);
 $res = mysqli_query(dbconnect(), $sql);
 while ($row = mysqli_fetch_assoc($res)) {
     $cat_id = $row['id_categorie'];
